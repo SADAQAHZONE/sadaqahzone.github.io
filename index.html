@@ -21,7 +21,7 @@
         }
 
         .logo {
-            height: 110px;
+            height: 140px;
         }
 
         /* Main Content Area */
@@ -41,14 +41,22 @@
 .donate-btn {
     background-color: #3cb371;
     color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    font-size: 16px;
+    padding: 18px 40px;   /* bigger */
+    font-size: 20px;      /* bigger text */
     font-weight: bold;
+    text-decoration: none;
     border-radius: 50px;
     transition: 0.3s ease;
 }
+@keyframes flash {
+    0% { box-shadow: 0 0 5px #3cb371; }
+    50% { box-shadow: 0 0 25px #3cb371; }
+    100% { box-shadow: 0 0 5px #3cb371; }
+}
 
+.donate-btn {
+    animation: flash 1.5s infinite;
+}
 .donate-btn:hover {
     background-color: #2e8b57;
     transform: scale(1.05);
