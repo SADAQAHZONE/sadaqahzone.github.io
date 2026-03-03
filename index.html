@@ -38,28 +38,33 @@
     padding: 20px 40px;
 }
 
+/* ===== DONATE BUTTON CLEAN VERSION ===== */
 .donate-btn {
     background-color: #3cb371;
     color: white;
-    padding: 18px 40px;   /* bigger */
-    font-size: 20px;      /* bigger text */
+    padding: 18px 20px;      /* reduced horizontal padding */
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 8px;      /* match category boxes */
+    display: block;          /* makes full width */
+    width: 100%;             /* aligns with Emergency/Education */
+    text-align: center;
+    box-sizing: border-box;
     transition: 0.3s ease;
+    animation: flash 1.8s infinite;
 }
+
+/* Flash glow */
 @keyframes flash {
     0% { box-shadow: 0 0 5px #3cb371; }
-    50% { box-shadow: 0 0 25px #3cb371; }
+    50% { box-shadow: 0 0 20px #3cb371; }
     100% { box-shadow: 0 0 5px #3cb371; }
 }
 
-.donate-btn {
-    animation: flash 1.5s infinite;
-}
 .donate-btn:hover {
     background-color: #2e8b57;
-    transform: scale(1.05);
+    transform: scale(1.03);
 }
         .main-section {
     display: flex;
