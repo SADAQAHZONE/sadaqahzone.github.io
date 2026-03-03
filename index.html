@@ -113,6 +113,36 @@
     font-weight: bold;
     color: #2e8b57;
 }
+        /* ===== MOBILE RESPONSIVE FIX ===== */
+@media (max-width: 768px) {
+
+    .main-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-side {
+        padding-right: 0;
+    }
+
+    .right-side {
+        border-left: none;
+        border-top: 3px solid #2e8b57;
+        padding-left: 0;
+        padding-top: 20px;
+        position: static;
+    }
+
+    .slider {
+        height: 180px;
+    }
+
+    .donate-btn {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
     </style>
 </head>
 
